@@ -1,1 +1,214 @@
+/* Progress Bar */
 
+.vertical-progress-bar {
+    position: fixed;
+    top: 100px;
+    left: 5px; 
+    height: 70vh;
+    width: 1px; 
+    background-color: #9093996e; 
+    z-index: 1;
+}
+.progress-section {
+    height: 25%; 
+    width: 80%;
+    background-color: transparent; 
+    border-bottom: 2px solid #fff; 
+}
+.progress-section.active {
+    background-color: #ff7919; 
+}
+.progress-section a.progress-section-item {
+    text-decoration:none;
+    font-size:0.8em;
+    font-weight:100;
+    margin-left:8px;
+    color: #909399ab;
+}
+.progress-section.active a.progress-section-item {
+    color:#ff7919!important;
+    font-weight:200;
+}
+
+/* About */
+section#about {
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+    background-color: #1c1e20;
+}
+section#about h2 {
+    padding-top:100px;
+}
+/* Work */
+.work-image-wrapper {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px!important;
+}
+.work-image {
+    height: 100vh;
+    position: relative;
+}
+.work-title {
+    height: 150vh;
+    object-fit: fill;
+    display: flex;
+    position: relative;
+    overflow: visible
+}
+.work-title.case-detail {
+    height: 125vh
+}
+ul {
+    list-style-type: none;
+}
+.tab-content-item ul li {
+    position: relative;
+    margin: 10px 0;
+    color:#c2c0c0;
+}
+.tab-content-item ul li:before {
+    content:'';
+    position:absolute;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: #ff7919;
+    left: -17px;
+}
+.work-title-wrapper {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    overflow: hidden
+}
+.work-wrapper {
+    display: flex
+}
+.work-info-wrapper {
+    width: 100%;
+    grid-column-gap: 25rem;
+    grid-row-gap: 25rem;
+    flex-direction: column;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    display: flex
+}
+.work-info {
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+.work-image-track {
+    width: 40%;
+    height: auto;
+    position: relative;
+    top: 0
+}
+.label {
+    border-radius: 5rem;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1;
+    display: inline-block;
+    color: grey;
+    border: 1px solid #6c6f735e;
+}
+.work-image-wrapper {
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0
+}
+.work-image {
+    height: 80vh;
+    position: relative
+}
+.work.background-color-black {
+    padding-bottom: 3rem
+}
+.case-image {
+    width: 750px;
+    height: 500px;
+    object-fit: contain;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%
+}
+.service-item-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+img {
+    object-fit: contain;
+    filter: drop-shadow(5px 9px 6px black);
+    max-height:500px;
+}
+/* Contact */
+#contact {
+    background-color: #1c1e20;
+    padding: 100px 0;
+}
+svg:hover path {
+    stroke:rgba(255, 255, 255, 0.783);
+}
+
+
+@media screen and (max-width: 599px) {
+    .desktop-work {
+        display: none;
+    }
+    .work-info-wrapper {
+        grid-row-gap: 5rem;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .work-info {
+        grid-column-gap: 5rem;
+        grid-row-gap: 0rem;
+    }
+    h1 {
+        font-size: 3.4rem !important;
+        text-align: right;
+    }
+    #hero::after {
+        width: 384px;
+        height: 300px;
+    }
+    #hero {
+        min-height: 650px !important;
+        background-position: 152% -63%;
+    }
+    h2 {
+        letter-spacing: -.04em !important;
+        font-size: 2.5rem !important;
+    }
+    .vertical-progress-bar {
+        height: 15vh;
+        top: 46px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1539px) {
+    .work-mobile {
+        display: none;
+    }
+}
