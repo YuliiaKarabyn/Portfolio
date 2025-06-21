@@ -1,0 +1,121 @@
+.menu-toggle {
+	color: #f8f6f1!important;
+	cursor: pointer;
+   }
+a.mail {
+	   text-transform: unset;
+	   color: #f8f6f168!important;
+	   text-decoration: none;
+	   margin-left: 8px;
+   }
+   .contact {
+	text-transform: unset;
+	color: #f8f6f168!important;
+	   text-decoration: none;
+	   margin-left: 8px;
+   }
+   a.mail:hover {
+	color: #f8f6f1!important;
+   }
+
+#myprofile {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+#myprofile h1 {
+
+		font-family: "Playfair Display", serif;
+	  font-optical-sizing: auto;
+	  font-weight: 600;
+	  font-size: 90px;
+	  color:#f8f6f1!important;
+	  max-width: 800px;
+	
+}
+.reveal-text span {
+	display: inline-block;
+	position: relative;
+	color: #f8f6f168; 
+	background: linear-gradient(to right, #f8f6f1 50%, #f8f6f168 50%);
+	background-size: 200% 100%;
+	background-position: 100% 0;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: colorReveal 2s ease forwards;
+  }
+  
+ 
+  .reveal-text span:nth-child(2) {
+	animation-delay: 1.9s;
+  }
+  
+  @keyframes colorReveal {
+	to {
+	  background-position: 0% 0;
+	}
+  }
+.description {
+	padding: 120px 0;
+	background-color: #f8f6f1!important;
+}
+.description h2 {
+	font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-size: 50px;
+}
+.services {
+	padding-top: 100px;
+}
+.m-font {
+	font-size: 20px;
+}
+.lg-font{
+	font-family: "Play", sans-serif;
+	font-weight: 400;
+font-style: normal;
+font-size: 30px;
+color:#292b34;
+text-align: justify;
+}
+
+a{
+font-family: "Play", sans-serif;
+font-weight: 400;
+font-style: normal;
+text-decoration: none;
+font-size: 16px;
+text-transform: uppercase;
+
+}
+
+
+/* 
+#slide-overlay.show {
+bottom: 0;
+pointer-events: auto;
+} */
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+	.m-font {
+		font-size: 16px;
+	}
+	.lg-font{
+	font-size: 20px;
+	
+	}
+	.description h2 {
+		font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-size: 30px;
+	}
+	h1 span{
+	
+		font-size: 36px;
+	   
+	  }
+	  p {
+		  text-align: justify;
+	  }
+}

@@ -40,12 +40,37 @@ font-optical-sizing: auto;
 font-weight: 500;
 font-size: 50px;
 }
+.reveal-text span {
+	display: inline-block;
+	position: relative;
+	color: #f8f6f168; 
+	background: linear-gradient(to right, #f8f6f1 50%, #f8f6f168 50%);
+	background-size: 200% 100%;
+	background-position: 100% 0;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: colorReveal 2s ease forwards;
+  }
+  
+ 
+  .reveal-text span:nth-child(2) {
+	animation-delay: 1.9s;
+  }
+  
+  @keyframes colorReveal {
+	to {
+	  background-position: 0% 0;
+	}
+  }
 
 #projects .container {
 	max-width: 1100px;
 }
 #projects {
 padding: 100px;
+}
+#projects h1 {
+	font-size: 90px;
 }
 .project-item {
 padding: 30px 0;
@@ -105,7 +130,7 @@ width: fit-content;
 .project-item img {
 max-height: 0;
 overflow: hidden;
-transition: max-height 0.5s ease-in-out;
+transition: max-height 0.9s ease-in;
 }
 
 .project-item:hover img {
@@ -126,4 +151,15 @@ pointer-events: none;
 #slide-overlay.show {
 bottom: 0;
 pointer-events: auto;
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+	#projects {
+		overflow-x: hidden;
+	}
+	h1 span{
+	
+		font-size: 36px;
+	   
+	  }
 }
