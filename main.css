@@ -1,10 +1,10 @@
 .contact_a {
 	text-transform: none;
 	margin-left: 5px;
-	color: #131212!important;
+	color: #292b34!important;
 }
 .bg_primary-black {
-	background-color: #131212;
+	background-color: #292b34;
 }
 						   .menu-toggle {
 							color: #f8f6f1!important;
@@ -57,7 +57,7 @@
 							   height: 650px;
 						   }
 .offcanvas {
-	background-color: #131212!important;
+	background-color: #292b34!important;
 }
 
 .primary {
@@ -106,7 +106,7 @@
 }
 .offcanvas {
 	width: 100%!important;
-	background-color: #131212;
+	background-color: #292b34;
 	height: 100vh!important;
 }
 
@@ -148,7 +148,7 @@ margin: auto;
 width: 0%;
 content: '.';
 color: transparent;
-background: #131212;
+background: #292b34;
 height: 1px;
 }
 .link__hover,
