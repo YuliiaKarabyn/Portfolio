@@ -1,0 +1,129 @@
+.menu-toggle {
+	color: #f8f6f1!important;
+	cursor: pointer;
+   }
+a.mail {
+	   text-transform: unset;
+	   color: #f8f6f168!important;
+	   text-decoration: none;
+	   margin-left: 8px;
+   }
+   .contact {
+	text-transform: unset;
+	color: #f8f6f168!important;
+	   text-decoration: none;
+	   margin-left: 8px;
+   }
+   a.mail:hover {
+	color: #f8f6f1!important;
+   }
+
+
+p {
+font-family: "Play", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 16px;
+color: #f8f6f168;
+}
+a{
+font-family: "Play", sans-serif;
+font-weight: 400;
+font-style: normal;
+text-decoration: none;
+font-size: 16px;
+text-transform: uppercase;
+}
+h1 {
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-size: 50px;
+}
+
+#projects .container {
+	max-width: 1100px;
+}
+#projects {
+padding: 100px;
+}
+.project-item {
+padding: 30px 0;
+border-bottom: 1px solid #f8f6f168;
+position: relative;
+}
+.project-item h2 {
+color: #f8f6f1;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-size: 32px;
+text-transform: capitalize;
+line-height: 45px;
+margin-bottom: 12px;
+}
+
+.project-item::after {
+position: absolute;
+bottom: -1px; 
+right: 0;
+content: '';
+height: 1px;
+background-color: #f8f6f1;
+width: 0%; 
+transition: width 0.6s ease-in-out; 
+}
+
+.project-item:hover::after {
+width: 100%; 
+}
+.project-count {
+color: #f8f6f168;
+font-family: "Play", sans-serif;
+}
+.project-item:hover .project-count {
+color: #f8f6f1;
+}
+.tabs {
+margin-left: 0;
+padding-left: 0;
+list-style-type: none;
+}
+.tab-item {
+font-size: 12px;
+color: #f8f6f1;
+border: 1px solid #f8f6f168;
+border-radius: 10px;
+margin-right: 10px;
+font-family: "Play", sans-serif;
+font-weight: 400;
+font-style: normal;
+padding: 3px 8px;
+text-transform: capitalize;
+width: fit-content;
+}
+.project-item img {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.5s ease-in-out;
+}
+
+.project-item:hover img {
+max-height: 207px; 
+}
+#slide-overlay {
+position: fixed;
+bottom: -100%;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #f8f6f1; 
+z-index: 9999;
+transition: bottom 0.7s ease-in-out;
+pointer-events: none;
+}
+
+#slide-overlay.show {
+bottom: 0;
+pointer-events: auto;
+}
